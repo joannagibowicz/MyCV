@@ -14,6 +14,11 @@ article {
 section{
   margin: 1em;
   padding: 1em;
+  border-bottom: 1px solid black;
+}
+
+section:last-child{
+  border-bottom: none;
 }
 
 header, main, footer {
@@ -49,12 +54,26 @@ main {
 }
 
 .course {
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .course .title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #428cc9;
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
 }
 
 .course .description {
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.course .descrition p {
+  padding-left: 1em;
+  margin: 0;
 }
 
 .school span {
