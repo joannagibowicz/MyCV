@@ -76,6 +76,27 @@ main {
   margin: 0;
 }
 
+.skills{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills .column{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.column > ul{
+  list-style-type: none;
+  padding: 0;
+}
+.column > ul > li:before{
+  content: ">>";
+  padding-right: 0.5em;
+  color: #428cc9;
+}
+
+
 .school span {
   color: #A7B8BF;
 }
