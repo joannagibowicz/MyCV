@@ -50,6 +50,7 @@ header > h1 {
   text-transform: uppercase;
 }
 
+
 main {
   max-width: 1140px;
 }
@@ -134,4 +135,71 @@ p {
 
 footer {
  padding: 1em;
+ text-align: right;
+ color: whitesmoke;
+ background-image: url(/img/bg.png)
+}
+
+footer p{
+  display: inline;
+}
+
+footer a{
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 25px;
+  padding: 5px;
+}
+
+footer a:hover{
+  opacity: 0.5;
+}
+
+.socialmedia{
+  padding: 5px;
+}
+
+
+/****************  Responsiveness ************************/
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrpition {
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+  header section{
+    max-width: 100%;
+  }
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+  .course{
+    display: block;
+  }
+
+  .course .title, .course .descrpition {
+    max-width: 100%;
+  }
+
+  .title{
+    text-align: center;
+  }
+  .description{
+    text-align: justify;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
