@@ -190,6 +190,7 @@ footer {
 
 
 /****************  Responsiveness ************************/
+
 @media only screen and (max-width: 768px) {
   .course {
     display: block;
@@ -197,6 +198,10 @@ footer {
 
   .course .title, .course .descrpition {
     max-width: 100%;
+  }
+
+  .hobby div{
+    padding: 0 30px;
   }
 
 }
